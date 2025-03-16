@@ -103,10 +103,10 @@ function exibirResultado(resultado) {
         resultadoTexto += `${amigo} tirou ${resultado[amigo]}. `;
     });
 
-    anunciarTexto(resultadoTexto);
+    falarAmigos(resultadoTexto);
 }
 
-function anunciarTexto(texto) {
+function falarAmigos(texto) {
     const speech = new SpeechSynthesisUtterance(texto);
     speech.lang = "pt-BR";
     window.speechSynthesis.speak(speech);
