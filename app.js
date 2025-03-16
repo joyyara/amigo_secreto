@@ -42,7 +42,7 @@ function atualizarLista()
         const li = document.createElement("li");
         li.textContent = amigo;
         const botaoRemover = document.createElement("button");
-        botaoRemover.textContent = " ❌ ";
+        botaoRemover.textContent = "x";
         botaoRemover.onclick = () => removerAmigo(index);
         li.appendChild(botaoRemover);
         listaElement.appendChild(li);
